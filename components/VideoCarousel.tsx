@@ -116,7 +116,7 @@ const VideoCarousel = () => {
         gsap.ticker.remove(animUpdate);
       }
     }
-  }, [videoId, startPlay]);
+  }, [videoId, startPlay, isPlaying]);
 
   useEffect(() => {
     console.log("video play pause " + loadedData.length)
@@ -167,11 +167,6 @@ const VideoCarousel = () => {
     setLoadedData((pre) => [...pre, e]);
   }
 
-  
-  useEffect(() => {
-    // Log videoRef.current to ensure the ref is correctly initialized
-    console.log("Video Ref:", videoRef.current);
-  }, []);
 
   return (
     <>
