@@ -4,9 +4,6 @@
 2. ⚙️ [Tech Stack](#tech-stack)
 3. 🔋 [Features](#features)
 4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Snippets](#snippets)
-6. 🔗 [Links](#links)
-7. 🚀 [More](#more)
 
 ## <a name="introduction">🤖 Introduction</a>
 
@@ -48,7 +45,7 @@ Make sure you have the following installed on your machine:
 
 ```bash
 $ git clone https://github.com/Vinod-Mane3021/apple-landing-page.git
-$ cd iphone-doc
+$ cd apple-landing-page
 ```
 
 First, run the development server:
