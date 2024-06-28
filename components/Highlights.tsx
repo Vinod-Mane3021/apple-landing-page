@@ -5,9 +5,25 @@ import { rightImg, watchImg } from "@/utils";
 import Image from "next/image";
 import React from "react";
 import VideoCarousel from "./VideoCarousel";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+
 
 const Highlights = () => {
-  useHighlightsAnimation();
+  // useHighlightsAnimation();
+  useGSAP(() => {
+    gsap.to("#title", {
+      opacity: 1,
+      y: 0,
+    });
+
+    gsap.to(".link", {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      stagger: 0.25
+    });
+  }, []);
 
   return (
     <section

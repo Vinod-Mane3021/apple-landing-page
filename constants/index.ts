@@ -1,3 +1,4 @@
+import { ModelSizesProps } from "@/types/mode";
 import {
   blackImg,
   blueImg,
@@ -73,7 +74,7 @@ export const models = [
   },
 ];
 
-export const sizes = [
+export const sizes: ModelSizesProps[] = [
   { label: '6.1"', value: "small" },
   { label: '6.7"', value: "large" },
 ];
