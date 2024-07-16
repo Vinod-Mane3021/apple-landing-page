@@ -1,20 +1,18 @@
+import { animateWithGsap } from "@/utils/animations";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 export const useHeroAnimation = () => {
   useGSAP(() => {
-
-    gsap.to("#hero", {
+    animateWithGsap("#hero", {
       opacity: 1,
       delay: 1,
     });
 
-    gsap.to("#cta", {
+    animateWithGsap("#cta", {
       opacity: 1,
       y: -50,
       delay: 1.5,
-    })
-
-    
+    });
   }, []);
 };

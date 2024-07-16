@@ -1,5 +1,6 @@
 'use client'
 
+import Chip from "@/components/Chip";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Highlights from "@/components/Highlights";
@@ -14,6 +15,7 @@ const Home = () => {
       <Highlights />
       <Model />
       <Features/>
+      <Chip/>
     </main>
   );
 };
