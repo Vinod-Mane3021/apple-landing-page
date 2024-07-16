@@ -4,15 +4,15 @@ import gsap from "gsap";
 
 export const useHeroAnimation = () => {
   useGSAP(() => {
-    animateWithGsap("#hero", {
+    gsap.to("#hero", {
       opacity: 1,
       delay: 1,
     });
 
-    animateWithGsap("#cta", {
+    gsap.to("#cta", {
       opacity: 1,
       y: -50,
       delay: 1.5,
-    });
+    })
   }, []);
 };
